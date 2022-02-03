@@ -90,7 +90,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 @Client.on_message(
     command(["play"])
     & filters.group
-    & ~filters.edited
+    & ~filters.edited 
     & ~filters.forwarded
     & ~filters.via_bot
 )
@@ -98,7 +98,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("🔎 **𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ 𝐞𝐒𝐩𝐨𝐫𝐭 🚬 ❱...**")
+    lel = await message.reply("🔎 **𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ TOXIC 🚬 ❱...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -106,7 +106,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Esport_MusicX"
+        user.first_name = "TOXIC MUSIC"
     usar = user
     wew = usar.id
     try:
@@ -118,7 +118,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>𝐀𝐝 𝐌𝐞 😎 𝐀𝐬 𝐀𝐝𝐦𝐢𝐧 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 💫  𝐅𝐢𝐫𝐬𝐭 ❰ 𝐞𝐒𝐩𝐨𝐫𝐭 ❤️  𝐌𝐮𝐬𝐢𝐜'𝐗  🚬 ❱</b>")
+                        "<b>𝐀𝐝 𝐌𝐞 😎 𝐀𝐬 𝐀𝐝𝐦𝐢𝐧 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 💫  𝐅𝐢𝐫𝐬𝐭 ❰ Toxic❤️  𝐌𝐮𝐬𝐢𝐜'𝐗  🚬 ❱</b>")
                     return
 
                 try:
@@ -163,21 +163,21 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
-                            url=f"https://t.me/eSport_BOTs")
+                            url=f"https://t.me/DANGEROUSFIGHTER")
                ],
                [
                     InlineKeyboardButton(
-                            text="𝐒𝐦𝐨𝐊𝐞𝐫 🚬",
-                            url=f"https://t.me/Sanki_Owner"),
+                            text="TOXIC 🚬",
+                            url=f"https://t.me/its_toxicop"),
                             
                     InlineKeyboardButton(
                             text="𝐅𝐞𝐞𝐋𝐢𝐧𝐠'𝐒 🥀",
-                            url=f"https://t.me/Smoker_Feelings")
+                            url=f"https://t.me/DANGEROUSFIGHTER")
                ],
                [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩⭐",
-                            url=f"https://t.me/EsportClan")
+                            url=f"https://t.me/Dangerousfighters")
                    
                 ]
             ]
@@ -216,21 +216,21 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
-                            url=f"https://t.me/eSport_BOTs")
+                            url=f"https://t.me/DANGEROUSFIGHTER")
                ],
                [
                     InlineKeyboardButton(
-                            text="𝐒𝐦𝐨𝐊𝐞𝐫 🚬",
-                            url=f"https://t.me/Sanki_Owner"),
+                            text="TOXIC 🚬",
+                            url=f"https://t.me/its_toxicop"),
                             
                     InlineKeyboardButton(
                             text="𝐅𝐞𝐞𝐋𝐢𝐧𝐠'𝐒 🥀",
-                            url=f"https://t.me/Smoker_Feelings")
+                            url=f"https://t.me/DANGEROUSFIGHTER")
                ],
                [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩⭐",
-                            url=f"https://t.me/EsportClan")
+                            url=f"https://t.me/Dangerousfighters")
                    
                 ]
             ]
@@ -238,7 +238,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+            thumb_name = "https://telegra.ph/file/6886f2463b4da4887458a.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
